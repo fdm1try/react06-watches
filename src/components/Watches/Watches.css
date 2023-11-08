@@ -1,0 +1,103 @@
+.watches {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 1px solid black;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #f2e8cf;
+  user-select: none;
+}
+
+.watches-daytime {
+  background-color: #353535;
+  color: white;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.3em;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.watches-digit {
+  position: absolute;
+  background-color: #353535;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;  
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.watches-digit_3 {
+  top: calc(50% - 25px);
+  right: 5%;
+}
+
+.watches-digit_6 {
+  bottom: 5%;
+  left: calc(50% - 25px);
+}
+
+.watches-digit_9 {
+  top: calc(50% - 25px);
+  left: 5%;
+}
+
+.watches-digit_12 {
+  top: 5%;
+  left: calc(50% - 25px);
+}
+
+.watches-arrow-hours, .watches-arrow-minutes, .watches-arrow-seconds {
+  position: absolute;
+  top: 0;
+  height: 100%;  
+}
+
+.watches-arrow-hours {
+  width: 10px;
+}
+
+.watches-arrow-minutes {
+  width: 5px;
+}
+
+.watches-arrow-seconds {
+  width: 3px;
+}
+
+.watches-arrow-hours::after, .watches-arrow-minutes::after, .watches-arrow-seconds::after {
+  position: absolute;
+  width: 100%;
+  display: block;
+  content: '';  
+}
+
+.watches-arrow-hours::after {
+  top: 25%;
+  height: 25%;
+  background-color: #bc4749;
+}
+
+.watches-arrow-minutes::after {
+  top: 15%;
+  height: 35%;
+  background-color: #a7c957;  
+}
+
+.watches-arrow-seconds::after {
+  top: 5%;
+  height: 45%;
+  background-color: #386641;
+}
